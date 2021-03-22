@@ -1,0 +1,612 @@
+{
+  "introduction": "https://vimeo.com/443096876",
+  "background": "/assets/media/audios/background.wav",
+  "characters": [
+    {
+      "id": "drmoon",
+      "name": "Dr Moon",
+      "image": {
+        "source": "/assets/media/images/characters/drmoon.png",
+        "alt": "Dr Moon"
+      },
+      "type": "TEACHER"
+    },
+    {
+      "id": "dregg",
+      "name": "Dr Egg",
+      "image": {
+        "source": "/assets/media/images/characters/dregg.png",
+        "alt": "Dr Egg"
+      },
+      "type": "TEACHER"
+    },
+    {
+      "id": "ardash",
+      "name": "Ardash",
+      "image": {
+        "source": "/assets/media/images/characters/ardash.png",
+        "alt": "Ardash",
+        "background":"/assets/media/images/characters/Ardash_CharacterBoxNoText.png",
+        "selected":"/assets/media/images/characters/ArdashButton.png"
+      },
+      "portrait": {
+        "source": "/assets/media/images/characters/ardash_portrait.png",
+        "alt": "Ardash portrait"
+      },
+      "type": "STUDENT",
+      "quote": "I’m almost perfect!",
+      "description": "Hi! I’m Ardash and my mum thinks I’m almost perfect. I don’t have a belly button, just like all the other kids who live in Techno World. I’m totally plugged in, with super eyesight and all sorts of amazing techno gadgets that help me gather data about important things, like how to cure diseases. Lucky I’m genetically modified so I never get sick.",
+      "audio": "/assets/media/audios/ardash_intro.wav",
+      "questions": [
+        {
+          "text": "About Me",
+          "answer": "Ardash is a boy with no belly button and he is literally perfect. He hails from techno-world and has been genetically modified so he can’t catch any diseases. He’s a super plugged in and clever kid, and knows heaps about technology. He’s able to work out scientific and mathematical problems super-fast, making him a great helper in Dr Egg’s experiments. He can also travel at super speeds!  Ardash likes to investigate and discover new diseases and is searching for one he could catch.",
+          "bold": "If you would like to join my investigation, check \"What is my investigation\"."
+        },
+        {
+          "text": "Which world am I from?",
+          "answer": "Techno-Towers"
+        },
+        {
+          "text": "What are my tools?",
+          "answer": "Hover scooter with a built-in compass. Wearable wrist gadget and camera.",
+          "tools": ["teletube", "hoverboard", "wristgadget", "petridish"],
+          "bold2": "You can click on each gadget to explore it in more datail."
+        },
+        {
+          "text": "What is my investigation?",
+          "answer": "I want to find out which seeds will germinate the quickest so the Slum-lane kids won’t go hungry. I need your help!",
+          "video": "https://vimeo.com/525395556/923162e710",
+          "pdf": "/ardash",
+          "videoImg":"/assets/media/images/characters/Book_Anim1_Ardash.png"
+        }
+      ],
+      "team": true
+    },
+    {
+      "id": "cornelia",
+      "name": "Cornelia",
+      "image": {
+        "source": "/assets/media/images/characters/cornelia.png",
+        "alt": "Cornelia",
+        "background":"/assets/media/images/characters/Cornellia_CharacterBoxNoText.png",
+        "selected":"/assets/media/images/characters/CornelliaButton.png"
+      },
+      "portrait": {
+        "source": "/assets/media/images/characters/cornelia_portrait.png",
+        "alt": "Cornelia portrait"
+      },
+
+      "type": "STUDENT",
+      "quote": "I just love anything to do with nature",
+      "description": "Hi I’m Cornelia, and my best friend is my pet mouse Carlin. I live in the corn farmlands, and I just love anything to do with nature. I can talk to animals, they love it when I play my special violin. With help from my magic corn I am going to liberate the world’s food from Professor Mole’s evil control.",
+      "audio": "/assets/media/audios/cornelia_intro.wav",
+      "questions": [
+        {
+          "text": "About Me",
+          "answer": "Cornelia is a girl with a sunny personality. Animals are attracted to her radiance and other farmer’s kids are jealous of her good fortune, because unlike her, most of them are starving. Cornelia is passionate about achieving justice for the animals and to feed the people of Farm World. With a pet mouse as her sidekick, it becomes her mission to unify the animals against Dr Mole and liberate the world’s food and seed supplies from Dr Mole’s control.",
+          "bold": "If you would like to join my investigation, check \"What is my investigation\"."
+        },
+        {
+          "text": "Which world am I from?",
+          "answer": "Corn-Farmlands"
+        },
+        {
+          "text": "What are my tools?",
+          "answer": "Pet mouse, Magic corn, Violin",
+          "tools": ["theMouse"],
+          "bold2": "You can click on each gadget to explore it in more datail."
+        },
+        {
+          "text": "What is my investigation?",
+          "answer": " I need to find out which plants produce edible and harvestable food in 8 weeks. Please help me!",
+          "pdf": "/cornelia",
+          "videoImg":"/assets/media/images/characters/Book_Anim1_Cornelia.png",
+          "video": "https://vimeo.com/525395625/99df5679b4"
+
+        }
+      ],
+      "team": true
+    },
+    {
+      "id": "vivi",
+      "name": "Vivi",
+      "image": {
+        "source": "/assets/media/images/characters/vivi.png",
+        "alt": "Vivi",
+        "background":"/assets/media/images/characters/Vivi_CharacterBoxNoText.png",
+        "selected":"/assets/media/images/characters/ViviButton.png"
+      },
+      "portrait": {
+        "source": "/assets/media/images/characters/vivi_portrait.png",
+        "alt": "Vivi portrait"
+      },
+      "type": "STUDENT",
+      "quote": " I’m a do-a-lot with not-a-lot kinda girl.",
+      "description": "Hi! I’m Vivi and I’m a do-a-lot with not-a-lot kinda girl. I live in Slum World, and my thing is recycling allthe junk people throw away. I can fix anything thanks to my super cool goggles and home-made toolkit full of all sorts of excellent gadgets.",
+      "audio": "/assets/media/audios/vivi_intro.wav",
+      "questions": [
+        {
+          "text": "About Me",
+          "answer": "Vivi is a curious inventor and a real risk-taker. She's resourceful and loves to 'do-a-lot with not-a-lot' by recycling bits and pieces she finds in slum world. She's passionate about finding practical solutions to fix problems like her father's missing ear. She desperately hopes Dr Egg will help her to grow him a new one!",
+          "bold": "If you would like to join my investigation, check \"What is my investigation\"."
+        },
+        {
+          "text": "Which world am I from?",
+          "answer": "Slum-Lanes"
+        },
+        {
+          "text": "What are my tools?",
+          "answer": "Home-made tool-kit with lots of gadgets, Dad's old motorcycle helmet and goggles.",
+          "tools": ["goggle", "toolbelt"],
+          "bold2": "You can click on each gadget to explore it in more datail."
+        },
+        {
+          "text": "What is my investigation?",
+          "answer": "I want to find out what plants need to grow. How can plant growth be optimised? Can you help me create a watering system or another invention to help?",
+          "pdf": "/vivi",
+          "videoImg":"/assets/media/images/characters/Book_Anim1_Vivi.png",
+          "video": "https://vimeo.com/525395696/e0368a1c26"
+
+        }
+      ],
+      "team": true
+    }
+  ],
+  "tools": [
+    {
+      "id": "goggle",
+      "name": "Goggle",
+      "image": {
+        "source": "/assets/media/images/tools/goggle.png",
+        "alt": "Goggle",
+        "selected": "/assets/media/images/tools/goggle_highlight.png",
+        "empty": "/assets/media/images/tools/goggle_empty.png",
+        "size": "md"
+      },
+      "parts": [
+        {
+          "text": "AirMeasure (Apple)",
+          "top": "19rem",
+          "right": "13rem",
+          "link": "https://bit.ly/tape-measure-apps"
+        }
+      ],
+      "description": "Vivi’s leather headgear is made from her father’s old bicycle helmet and goggles. She has modified them specially so she can measure distances and analyse objects and they keep the dust out of her eyes!",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Analyses objects and distance"
+        },
+        {
+          "text": "Can measure distance, length, weight, mass and capacity."
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "toolbelt",
+      "name": "Toolbelt",
+      "image": {
+        "source": "/assets/media/images/tools/toolbelt.png",
+        "alt": "Tool belt",
+        "selected": "/assets/media/images/tools/toolbelt_highlight.png",
+        "empty": "/assets/media/images/tools/toolbelt_empty.png",
+        "size": "md"
+      },
+      "parts": [
+        {
+          "text": "DIY Tools: To build and invent thing",
+          "top": "16rem",
+          "right": "13.5rem",
+          "link": "https://www.ifixit.com/Guide"
+        },
+        {
+          "text": "Thermometer: Measures outdoor temperature",
+          "top": "17rem",
+          "right": "18rem",
+          "link": "https://play.google.com/store/apps/details?id=androidesko.android.electronicthermometer&hl=en"
+        },
+        {
+          "text": "Cooking Tools: To measure and convert mass",
+          "top": "18rem",
+          "right": "10rem",
+          "link": "https://www.convert-me.com/en/convert/cooking/"
+        }
+      ],
+      "description": "Vivi has fashioned her own tool-belt to store her prized inventions and gadgets. Her tools Include a homemade fire-starter, different thickness of wire (like Alum keys, for picking locks and assembling things) and a ratchet spanner. She’s a ‘do-a-lot with not-alot’ girl.",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Can use for building, inventions, making things"
+        },
+        {
+          "text": "Fire- melting, smelting, burning, cooking"
+        },
+        {
+          "text": "Assembling robots, drones"
+        },
+        {
+          "text": "Fixing, holes, leaks"
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "teletube",
+      "name": "Tele-tube Scope",
+      "image": {
+        "source": "/assets/media/images/tools/teletube.png",
+        "alt": "Tele Tube",
+        "selected": "/assets/media/images/tools/teletube_highlight.png",
+        "empty": "/assets/media/images/tools/teletube_empty.png",
+        "size": "lg"
+      },
+      "parts": [
+        {
+          "text": "Lens: Measures Distances",
+          "top": "15.5rem",
+          "right": "1rem",
+          "link": "https://www.digitaltrends.com/mobile/best-astronomy-apps/"
+        }
+      ],
+      "description": "Ardash's teletube scope can see as far as the Corn-farmlands and Slum lanes. It was a present for his 13th birthday. The lens is able to magnify 1 x 40,000 times. It can change depth of focus, to recognize children's faces and help with visual recognition.",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Recognizes children from Corn Farmlands and Slum Lanes"
+        },
+        {
+          "text": "Helps measure distances for mapping."
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "hoverboard",
+      "name": "Hover-Tube",
+      "image": {
+        "source": "/assets/media/images/tools/hoverboard.png",
+        "selected": "/assets/media/images/tools/hoverboard_highlight.png",
+        "empty": "/assets/media/images/tools/hoverboard_empty.png",
+        "alt": "Hover Board",
+        "size": "lg"
+      },
+      "parts": [
+        {
+          "text": "Camera: Collects Data",
+          "top": "12rem",
+          "right": "23rem",
+          "link": "https://bit.ly/SPARKvue-app"
+        },
+        {
+          "text": "Engine: Works as a GPS",
+          "top": "17rem",
+          "right": "6.7rem",
+          "link": "https://bit.ly/googlemaps-android"
+        }
+      ],
+      "description": "Ardash’s Hover-tube goes faster than other kids, as he can run better and ride the hover-tube faster than any of his friends, which is, without boasting, pretty fast. The tube can collect data as it hovers around Slum-Lanes and the Techno-Towers.",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Works as a GPS (Global Positioning System) to identify locations and map them."
+        },
+        {
+          "text": "Facial recognition."
+        },
+        {
+          "text": "Measures distance and compiles data."
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "wristgadget",
+      "name": "Wrist Gadget",
+      "image": {
+        "source": "/assets/media/images/tools/wristgadget.png",
+        "alt": "Wrist Gadget",
+        "selected": "/assets/media/images/tools/wristgadget_highlight.png",
+        "empty": "/assets/media/images/tools/wristgadget_empty.png",
+        "size": "xs"
+      },
+      "parts": [
+        {
+          "text": "Microphone: Recognises voices and sounds",
+          "top": "10.5rem",
+          "right": "1.5rem",
+          "link": "https://bit.ly/voice-memo-app"
+        },
+        {
+          "text": "Camera: Can identify species",
+          "top": "16rem",
+          "right": "4.8rem",
+          "link": "http://www.wildfood.me/"
+        },
+        {
+          "text": "Screen: Used to collect data",
+          "top": "15rem",
+          "right": "22rem",
+          "link": "https://bit.ly/SPARKvue-app"
+        }
+      ],
+      "description": "Ardash was given the latest SEEDCORP techno-wrist gadget ™ (complete with super-reality games!) for his birthday. He can use it to collect data, analyse it (is this food edible?) It also records human and animal voices.",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Analyses food to see if it’s edible."
+        },
+        {
+          "text": "Microphone can recognise voice, sounds and identify species"
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "flyEgg",
+      "name": "Flying Egg Spy",
+      "image": {
+        "source": "/assets/media/images/tools/EggDrone_Front.png",
+        "selected": "/assets/media/images/tools/EggDrone_Front.png",
+        "empty": "/assets/media/images/tools/hoverboard_empty.png",
+        "alt": "Flying Egg Spy",
+        "size": "sm"
+      },
+      "parts": [
+        {
+          "text": "Eye: Measures distance",
+          "top": "4.5rem",
+          "right": "11.5rem",
+          "link": "https://bit.ly/math-science-measurementapps"
+        },
+        {
+          "text": "Wings: Measures Gravity",
+          "top": "11rem",
+          "right": "3rem",
+          "link": "https://bit.ly/gravity-desktop-app"
+        }
+      ],
+      "description": "Dr Egg has invented a Flying Egg Spy to track activities in Professor Moles totalitarian empire. It’s part egg, part chicken, part robot - and it is always on the lookout for Dr Egg’s first invention, the infamous square tomato!",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Works as a GPS (Global Positioning System) to identify locations and map them."
+        },
+        {
+          "text": "Measures distance"
+        },
+        {
+          "text": "Can recognise faces (Dr Egg switches this off most of the time, as this can be against the law!)"
+        },
+        {
+          "text": "Measures gravity"
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "petridish",
+      "name": "Petri Dish",
+      "image": {
+        "source": "/assets/media/images/tools/petridish.png",
+        "selected": "/assets/media/images/tools/petridish_highlight.png",
+        "empty": "/assets/media/images/tools/petridish_empty.png",
+        "alt": "Petri Dish",
+        "size": "ox"
+      },
+      "parts": [
+        {
+          "text": "Dish: Collects data and samples for analysis",
+          "top": "15rem",
+          "right": "13rem",
+          "link": "https://bit.ly/plantidentification-app"
+        }
+      ],
+      "description": "Ardash carries a petri dish to collect samples of bacteria and moulds. He is trying to find germs that cause diseases, like the one that killed his father. ",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Collects data and samples for further analysis"
+        }
+      ],
+      "link": []
+    },
+    {
+      "id": "theMouse",
+      "name": "Carlin the Mouse",
+      "image": {
+        "source": "/assets/media/images/tools/Carlin_FrontView.png",
+        "alt": "Carlin the Mouse",
+        "size": "xss"
+      },
+      "parts": [
+        {
+          "text": "Ears: Recognises animal sounds",
+          "top": "12rem",
+          "right": "17rem",
+          "link": "https://bit.ly/ausbirdsounds-app"
+        },
+        {
+          "text": "Brain: Can communicate with Cornelia, and other animals via thought-waves",
+          "top": "14rem",
+          "right": "9rem",
+          "link": "https://bit.ly/inaturalistapp-android"
+        },
+        {
+          "text": "Nose/Eyes: Sniffs and recoginses plants",
+          "top": "20rem",
+          "right": "10.5rem",
+          "link": "https://bit.ly/plantidentification-app"
+        }
+      ],
+      "description": "Carlin has followed Cornelia’s since they were a devoted pink mouselet. They seem to understand just about everything Cornelia thinks or says, via thought-waves, just as she can understand them, and quite a few other animals as well.",
+      "tittlee": "Characteristics",
+      "characteristics": [
+        {
+          "text": "Can talk to other animals"
+        },
+        {
+          "text": "Can thought-wave with Cornelia"
+        },
+        {
+          "text": "Can sniff out, taste and eat seeds and plants, determining what they are"
+        },
+        {
+          "text": "Can call upon other animals - pigeons, rats, dogs, pigs etc."
+        }
+      ],
+      "link": []
+    }
+  ],
+  "conversation": [
+    {
+      "character": "drmoon",
+      "actions": ["offscreenLeft", "left"]
+    },
+    {
+      "character": "dregg",
+      "actions": ["offscreenRight", "right"]
+    },
+    {
+      "character": "drmoon",
+      "text": "Hi! I’m Dr Cecilia Moon and I work in the Egg laboratories with my twin brother Dr Egg! I love knitting up all sorts of inventions, like wriggly fingers and tiny toes!",
+      "audio": "/assets/media/audios/drmoon_intro_1.mp3"
+    },
+    {
+      "character": "dregg",
+      "text": "Hi I’m Dr Egg! I work with my twin sister Dr Moon at the Egg Laboratories. I love concentrating on the tiny things in life, the seeds, the puffballs and tiny spores that take flight! Dr Moon and I are always creating miraculous new inventions.",
+      "audio": "/assets/media/audios/dregg_intro_01.mp3"
+    },
+
+    {
+      "character": "drmoon",
+      "text": "I always carry some yarn in my pockets and knitting needles in my hair, ...just in case! Dr Egg and I dream of making unique discoveries together in the Lab!",
+      "audio": "/assets/media/audios/drmoon_intro_2.mp3"
+    },
+    {
+      "character": "dregg",
+      "text": "I’ve already made a square tomato and a flying egg spy and a glow in the dark chooks bum! What’s next? Come and join us in the laboratory to find out! See you there!",
+      "audio": "/assets/media/audios/dregg_intro_02.mp3"
+    },
+    {
+      "character": "drmoon",
+      "text": "I am hatching a miraculous egg in our incubator, powered by my trusty bike! Dr Egg and I never know what we’ll hatch! One thing’s for sure... life is never dull in the Dr Egg Laboratories!",
+      "audio": "/assets/media/audios/drmoon_intro_3.mp3"
+    },
+
+    {
+      "character": "dregg",
+      "text": "But remember to be careful! On the pathway to invention, there’ll always be mistakes!",
+      "audio": "/assets/media/audios/dregg_intro_03.mp3"
+    },
+    {
+      "character": "dregg",
+      "text": "To start your adventure today, select a chapter to continue and meet our Eggspert Kid Deteggtives"
+    }
+  ],
+  "hints": [
+    {
+      "path": "/level-select",
+      "text": "Hi Eggsplorers, I am the handy-hint snake! I’ll pop up if you can't find what you're looking for in the Laboratory, or need some hints. So always look for me when you're stuck! Also, if you haven't found what you're looking for after half a minute, I'll pop up anyway!! When you click on me, I'll tell you what to do. Good luck on your Eggventures!!",
+      "showHelp":"false"
+    },
+    {
+      "path": "/portal",
+      "text": "Hi Eggventurers and Teachers! Click the icon on the bench to go to the: Student Portal - to choose your teams and tools, Teachers Portal - to find the animated episodes and the student workbooks!",
+      "showHelp":"false"
+    },
+    {
+      "path": "/students",
+      "text": "Hi Eggsplorers! Click on a character if you want to join a team! You can check out every character's tools before you decide!",
+      "showHelp":"true"
+    },
+    {
+      "path": "/workbench",
+      "text": "Want to see what every tool can do? Just click the tool image on the bench and read the pop-up box! Find out what it can do, and even see what online apps you can use to do the same thing!!  Hey, If you want to choose the tool for your eggsperiment, click on it again, and it will appear in your inventory box!  Guess what? Some of the tools have cool gadgets located in different places. When you see a circle flashing, click on it to find the extra things the tool can do! Did you know Ardash’s hoverboard can record Data AND take videos?",
+      "showHelp":"false"
+    },
+    {
+      "path": "/ardash",
+      "text": "Want to see what my team can do? Just click the investigate with me and read the text! Find out what we can do!",
+      "showHelp":"false"
+    },
+    {
+      "path": "/cornelia",
+      "text": "Want to see what my team can do? Just click the investigate with me and read the text! Find out what we can do!",
+      "showHelp":"false"
+    },
+    {
+      "path": "/vivi",
+      "text": "Want to see what my team can do? Just click the investigate with me and read the text! Find out what we can do!",
+      "showHelp":"false"
+    }
+
+  ],
+  "chapters": [
+    {
+      "enabled": true,
+      "name": "Chapter One",
+      "characters": ["drmoon", "dregg", "ardash", "vivi", "cornelia"],
+      "tools": [
+        "goggle",
+        "teletube",
+        "hoverboard",
+        "toolbelt",
+        "wristgadget",
+        "flyEgg",
+        "petridish",
+        "theMouse"
+      ],
+      "image": {
+        "source": "/assets/media/images/buttons/btn-Episode1.png",
+        "sourceAlt": "/assets/media/images/buttons/btn-Episode1-hover.png",
+        "alt": "Chapter one"
+      },
+      "teacher_notes": "https://drive.google.com/file/d/13zxmrjBn6oL87HZfTAJyCbHNXTvdgzvB/view",
+      "student_notes": "https://drive.google.com/file/d/1AfWDIn-Lp7v-lrZrV4DjDemfE3Vf0dvG/view",
+      "animation": [
+        {
+          "id": "part_one",
+          "name": "Part one",
+          "src": "https://player.vimeo.com/video/439133137",
+          "description": "Part one(2)",
+          "buttonImage":{
+            "source": "/assets/media/images/buttons/btn-GoToVideoPart1.png",
+            "hover": "/assets/media/images/buttons/btn-GoToVideoPart1-hover.png"
+          }
+        },
+        {
+          "id": "part_two",
+          "name": "Part two",
+          "src": "https://player.vimeo.com/video/439133314",
+          "description": "Part two(3)",
+          "buttonImage":{
+            "source": "/assets/media/images/buttons/btn-GoToVideoPart2.png",
+            "hover": "/assets/media/images/buttons/btn-GoToVideoPart2-hover.png"
+          }
+        },
+        {
+          "id": "part_three",
+          "name": "Part three",
+          "src": "https://player.vimeo.com/video/439133502",
+          "description": "Part three(4)",
+          "buttonImage":{
+            "source": "/assets/media/images/buttons/btn-GoToVideoPart3.png",
+            "hover": "/assets/media/images/buttons/btn-GoToVideoPart3-hover.png"
+          }
+        },
+        {
+          "id": "part_four",
+          "name": "Part four",
+          "src": "https://player.vimeo.com/video/439133594",
+          "description": "Part four(5)",
+          "buttonImage":{
+            "source": "/assets/media/images/buttons/btn-GoToVideoPart4.png",
+            "hover": "/assets/media/images/buttons/btn-GoToVideoPart4-hover.png"
+          }
+        }
+      ]
+    }
+  ]
+}

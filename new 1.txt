@@ -1,0 +1,152 @@
+import React, { useEffect, useState } from 'react'
+import SplitText from 'react-pose-text'
+import { Button } from 'react-bootstrap'
+import _ from 'lodash'
+import styled from 'styled-components'
+import posed from 'react-pose'
+import { demo } from '../demo/conversation'
+const Wrapper = styled.div`
+  background-color: red;
+  height: 100%;
+  .conversation {
+    background-color: blue;
+    display: flex;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+  }
+`
+const SpeechBubbleLeft = styled.li`
+  margin-right: auto;
+  padding: 15px;
+  position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+  &:after {
+    content: '';
+  	position: absolute;
+  	left: 0;
+  	top: 50%;
+  	width: 0;
+  	height: 0;
+  	border: 28px solid transparent;
+  	border-right-color: #00aabb;
+  	border-left: 0;
+  	border-bottom: 0;
+  	margin-top: -14px;
+  	margin-left: -28px;
+  }
+`
+const SpeechBubbleRight = styled.li`
+  margin-left: auto;
+  padding: 15px;
+  position: relative;
+  background: #00aabb;
+  border-radius: .4em;
+  &:after {
+    content: '';
+  	position: absolute;
+  	right: 0;
+  	top: 50%;
+  	width: 0;
+  	height: 0;
+  	border: 28px solid transparent;
+  	border-left-color: #00aabb;
+  	border-right: 0;
+  	border-bottom: 0;
+  	margin-top: -14px;
+  	margin-right: -28px;
+  }
+`
+const CenterSpeechBubble = styled.li`
+margin: auto;
+padding: 15px;
+position: relative;
+background: #00aabb;
+border-radius: .4em;
+&:after {
+  content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #00aabb;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+`
+const charPoses = {
+  enter: { opacity: 1 },
+  exit: { opacity: 0 }
+}
+const TypeWriter = posed.div({
+  exit: {
+  x: '-100%'
+  },
+  enter: {
+    x: '0%',
+    beforeChildren: true,
+    staggerChildren: 50
+  }
+})
+export default () => {
+  const [conversation, setConversation] = useState(null)
+  const [dialogue, setDialogue] = useState(null)
+  const [pose, setPose] = useState('enter')
+  useEffect(() => {
+    const startId = demo.conversation[0].start
+    setConversation(demo.conversation[0])
+    setDialogue(_.find(demo.conversation[0].dialogue, block => block.id === startId))
+  }, [])
+  const handleNext = () => {
+    let nextId = dialogue.next || null
+    if(nextId !== null) {
+      setDialogue(_.find(conversation.dialogue, block => block.id === nextId))
+      setPose('enter')
+    }
+  }
+  const handleOnPoseComplete = (pose) => {
+    if (pose === 'enter') {
+      if (dialogue.next) {
+        setPose('exit')
+        handleNext()
+      }
+    }
+  }
+  function createSpeechBubble() {
+    if (dialogue === null) return null
+    if (dialogue.alignment === 'left') {
+      return (
+        <SpeechBubbleLeft>
+          <TypeWriter initialPose="exit" pose={pose} onPoseComplete={p => handleOnPoseComplete(p)}>
+            <SplitText charPoses={charPoses}>
+              { dialogue.text }
+            </SplitText>
+          </TypeWriter>
+        </SpeechBubbleLeft>
+      )
+    }
+    else if (dialogue.alignment === 'right') {
+      return (
+        <SpeechBubbleRight>
+          <TypeWriter initialPose="exit" pose={pose} onPoseComplete={p => handleOnPoseComplete(p)}>
+            <SplitText charPoses={charPoses} >
+              { dialogue.text }
+            </SplitText>
+          </TypeWriter>
+        </SpeechBubbleRight>
+      )
+    }
+  }
+  return (
+    <Wrapper>
+      <ul className='conversation'>
+        { createSpeechBubble() }
+      </ul>
+
+    </Wrapper>
+  )
+}
